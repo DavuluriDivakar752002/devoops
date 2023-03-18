@@ -1,0 +1,179 @@
+<html>
+
+<head>
+  <title>
+    Login form
+  </title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ecf0f3;
+      color: #555;
+    }
+
+    .login {
+      width: 425px;
+      height: 595px;
+      padding: 60px 35px 35px 35px;
+      border-radius: 40px;
+      background-color: rgba(40, 65, 37, 0.3);
+      box-shadow: 3px 3px 8px #03071e,
+        -3px -3px 8px #f1faee;
+    }
+
+
+    .logo {
+      background: url("logo.png");
+      background-color: #dfe7fd;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin: 0 auto;
+      box-shadow:
+        0px 0px 2px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #03071e,
+        -8px -8px 15px #f1faee;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 35px;
+      padding-top: 20px;
+      letter-spacing: 1px;
+    }
+
+
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      padding-top: 7px;
+      letter-spacing: 0.5px;
+    }
+
+    .fields {
+      width: 100%;
+      padding: 75px 5px 5px 5px;
+    }
+
+    .fields input {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 18px;
+      color: #001233;
+      padding: 15px 10px 20px 5px;
+    }
+
+    .username,
+    .password {
+      margin-bottom: 30px;
+      border-radius: 25px;
+      box-shadow:
+        inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #fae1dd;
+    }
+
+    @font-face {
+      font-family: 'icomoon';
+      src: url('fonts/icomoon.eot?n48mbs');
+      src: url('fonts/icomoon.eot?n48mbs#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?n48mbs') format('truetype'),
+        url('fonts/icomoon.woff?n48mbs') format('woff'),
+        url('fonts/icomoon.svg?n48mbs#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+
+    [class^="icon-"],
+    [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon-scholarshiplogo:before {
+      content: "\e902";
+    }
+
+    .icon-password:before {
+      content: "\e901";
+    }
+
+    .icon-username:before {
+      content: "\e903";
+    }
+
+    .icon-scholarshiplogo {
+      font-size: 90px;
+      padding-left: 10px;
+      color: #000;
+    }
+
+    .icon-username,
+    .icon-password {
+      font-size: 30px;
+      padding-left: 20px;
+      color: #000;
+    }
+
+    .signin {
+      outline: none;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      background-color: #67b99a;
+      color: #343a40;
+      box-shadow: 3px 3px 8px #03071e,
+        -3px -3px 8px #f1faee;
+      transition: 0.75s;
+    }
+
+    .signin:hover {
+      color: #00f5d4;
+      background: #003566;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login">
+    <div class="logo"><span class="icon-scholarshiplogo"></span></div>
+    <div class="title">Scholarship Portal</div>
+    <div class="subtitle">Government of India</div>
+    <div class="fields">
+      <div class="username"><span class="icon-username"></span><input type="username" class="user-input"
+          placeholder="  Username"></div>
+      <div class="password"><span class="icon-password"></span><input type="password" class="pass-input"
+          placeholder="  Password"></div>
+    </div>
+    <a href="program1.html"><button class="signin">LOGIN</button></a>
+  </div>
+</body>
+
+</html>
